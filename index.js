@@ -51,24 +51,18 @@ soma((Number(prompt('Digite um número:'))),(Number(prompt('Digite outro número
                                   //● Retorne um novo array com dois elementos:
                                   //● o último e o primeiro número do array recebido divididos por dois.
 
-        function retornaArray(){
-            var numeros = []; 
-            v1 = Number(prompt('digite primeiro valor:'));
-            v2 = Number(prompt('digite segundo valor:'));
-            v3 = Number(prompt('digite terceiro valor:'));
-            v4 = Number(prompt('digite quarto valor:'));
-            v5 = Number(prompt('digite quinto valor:'));
-            numeros = [v1, v2, v3, v4, v5];
-            divisaoA = numeros[0] / 2;
-            divisaoB = numeros[4] / 2;
-            return novoArray = [divisaoA, divisaoB];
-        }
+array = [30, 60, 90, 120, 150]
 
-        //console.log(retornaArray()); //apenas retorna o array criado na função
-        var novoArray = retornaArray(); //se quiser usar o retorno da função (um array) como um novo array utilizável
-        novoArray.push (1000); //se torna possível acrescentar informações ao array
-        console.log(novoArray);
- */
+function filtrarArray (numeros){ //receber um array significa puxar um array que está fora da função
+ 
+    primeiroN = array[0] / 2;
+    segundoN = array[array.length -1] / 2; //pegando o último elemento do array através do length, -1 para igualar aos índices do array
+    novoArray = [primeiroN,segundoN]; 
+    return console.log(novoArray);
+}
+
+filtrarArray (array); //recebendo um array de números 
+*/
 
 /*
 //Exercício 5. ● Refaça o exercício 2 com a sintaxe de expressão de função
