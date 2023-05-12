@@ -261,17 +261,16 @@ console.log(`Números inseridos: ${n1} e ${n2} \nSoma: ${somar(n1,n2)}\nSubtraç
 //b) Escreva outra *arrow function* que recebe dois valores como parâmetros mas **nenhum retorno.** ???
 //Faça a soma entre esses valores e chame a sua primeira função mandando este resultado da soma como entrada para imprimi-lo
 
-var valor = (n1) => {
-      console.log(n1);
+var retornarValores = (funcao) => {
+    return console.log(funcao);
 }
 
-var valores = (n1, n2) => {
-    n1 = Number(prompt('Digite um valor:'));
-    n2 = Number(prompt('Digite outro valor:'));
-    soma = n1 + n2;
-    return soma;
+var receberValores = (v1, v2) => {
+    return v1 + v2;
 }
-valor (valores());
+
+retornarValores(receberValores(10,20));
+
 */
 
 /*
