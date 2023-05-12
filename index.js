@@ -228,34 +228,26 @@ string();
 //Multiplicação: 90
 //Divisão: 10
 
-function soma (n1,n2){
-    var somar = n1 + n2;
-    return somar;
+function somar (v1, v2){
+    return v1 + v2;
 }
 
-function subtracao(n1,n2){
-    var subtrair = n1 - n2;
-    return subtrair;
+function subtrair (v1, v2){
+    return v1 - v2;
 }
 
-function multiplicacao(n1,n2){
-    var multiplicar = n1 * n2;
-    return multiplicar;
+function multiplicar (v1,v2){
+    return v1 * v2;
 }
 
-function divisao(n1, n2){
-    var dividir = n1 / n2;
-    return dividir;
+function dividir (v1, v2){
+    return v1 / v2;
 }
+var n1 = Number(prompt('Digite primeiro número:'));
+var n2 = Number(prompt('Digite segundo número:'));
 
-var numero1 = Number(prompt('Digite primeiro número:'));
-var numero2 = Number(prompt('Digite segundo número:'));
 
-console.log('Números inseridos: '+numero1+ ' e '+numero2);
-console.log('Soma: '+soma (numero1, numero2))
-console.log('Diferença: '+subtracao (numero1, numero2));
-console.log('Multiplicação: '+multiplicacao (numero1, numero2));
-console.log('Divisão: '+divisao (numero1, numero2));
+console.log(`Números inseridos: ${n1} e ${n2} \nSoma: ${somar(n1,n2)}\nSubtração: ${subtrair(n1,n2)}\nMultiplicação: ${multiplicar(n1,n2)}\nDivisão: ${dividir(n1,n2)}`)
 */
 
 //DESAFIOS
